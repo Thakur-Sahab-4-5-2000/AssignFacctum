@@ -46,6 +46,14 @@ const Occupation = () => {
     ]);
   };
 
+  const decreaseCounter = (e, index) => {
+    e.preventDefault();
+    console.log(index);
+    const list = [...details];
+    list.splice(index, 1);
+    setDetails(list);
+  };
+
   const leapYear = (year) => {
     if ((0 == year % 4 && 0 != year % 100) || 0 == year % 400) {
       return true;
@@ -322,6 +330,12 @@ const Occupation = () => {
                     </Select>
                   </FormControl>
                 </Box>
+                <button
+                  className="remove"
+                  onClick={(e) => decreaseCounter(e, index)}
+                >
+                  - Remove
+                </button>
               </div>
             </React.Fragment>
           );
