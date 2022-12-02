@@ -9,6 +9,11 @@
       font-weight: 600;
       color: rgb(7, 124, 221);
     }
+    .remove{
+      background: rgb(255, 69, 69);
+      color: white;
+      border: none;
+    }
     display: flex;
     flex-direction: column;
     gap: 20px;
