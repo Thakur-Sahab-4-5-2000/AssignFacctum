@@ -330,12 +330,14 @@ const Occupation = () => {
                     </Select>
                   </FormControl>
                 </Box>
-                <button
-                  className="remove"
-                  onClick={(e) => decreaseCounter(e, index)}
-                >
-                  - Remove
-                </button>
+                 {index === 0 ? null : (
+                  <button
+                    className="remove"
+                    onClick={(e) => decreaseCounter(e, index)}
+                  >
+                    - Remove
+                  </button>
+                )}
               </div>
             </React.Fragment>
           );
