@@ -48,6 +48,7 @@ const Occupation = () => {
 
   const decreaseCounter = (e, index) => {
     e.preventDefault();
+    setCounter(counter - 1);
     console.log(index);
     const list = [...details];
     list.splice(index, 1);
