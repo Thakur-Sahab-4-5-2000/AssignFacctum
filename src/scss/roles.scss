@@ -1,0 +1,57 @@
+.occupation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .roles {
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: rgb(7, 124, 221);
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .date {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+  button {
+    height: 30px;
+    width: 80px;
+    margin-top: 20px;
+    margin-right: 50px;
+    align-items: center;
+    background: none;
+    border: 1px solid rgb(7, 124, 221);
+    color: rgb(7, 124, 221);
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      background: rgb(7, 124, 221);
+      color: white;
+      transition: ease-in-out;
+      transition-delay: 0.03;
+    }
+  }
+  .disable {
+    height: 30px;
+    width: 80px;
+    margin-top: 20px;
+    margin-right: 50px;
+    align-items: center;
+    background: none;
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      background: rgba(67, 65, 65, 0);
+      color: black;
+      transition: ease-in-out;
+      transition-delay: 0.03;
+    }
+  }
+}
